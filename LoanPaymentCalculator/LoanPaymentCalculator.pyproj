@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>553ad709-7cec-4b9d-9ce9-52ebc6a50fb3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test_loan_calculations.py</StartupFile>
+    <StartupFile>loan_payment_calculator.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

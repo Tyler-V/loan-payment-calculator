@@ -1,3 +1,11 @@
+# -----------------------------------------------------------
+# Loan Payment Calculator v1.0.0
+#
+# (C) 2021 Tyler Vorpahl, Troy, NY
+# Released under GNU Public License (GPL)
+# email tyler.vorpahl@gmail.com
+# -----------------------------------------------------------
+
 import unittest
 from loan_payment_calculator import Loan
 

@@ -84,10 +84,10 @@ def main():
         else:
             break
 
-    amount = float(parse_line(lines[0], "amount: ([0-9]+)", "Line 1 expected format, 'amount: 100000'"))
-    interest = float(parse_line(lines[1], "interest: ([0-9+].?[1-9+]%?)", "Line 2 expected format, 'interest: 5.5%'").strip('%')) / 100
-    down_payment = float(parse_line(lines[2], "down payment: ([0-9]+)", "Line 3 expected format, 'down payment: 20000'"))
-    term = float(parse_line(lines[3], "term: ([0-9]+)", "Line 3 expected format, 'down payment: 20000'"))
+    amount = float(parse_line(lines[0], "amount:\s*([0-9]+)", "Line 1 expected format, 'amount: 100000'"))
+    interest = float(parse_line(lines[1], "interest:\s*([0-9+].?[1-9+]%?)", "Line 2 expected format, 'interest: 5.5%'").strip('%')) / 100
+    down_payment = float(parse_line(lines[2], "down payment:\s*([0-9]+)", "Line 3 expected format, 'down payment: 20000'"))
+    term = float(parse_line(lines[3], "term:\s*([0-9]+)", "Line 3 expected format, 'down payment: 20000'"))
 
     loan = Loan(amount, interest, down_payment, term)
 
